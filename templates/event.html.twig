@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<h1>Ajouter un event</h1>
+	<div class="row">
+		<div class="col-lg-8">
+			{{ form_start(form) }}
+			{{ form_row(form.description) }}
+			{{ form_row(form.summary) }}
+			{{ form_row(form.start, {type: 'datetime-local'}) }}
+			{{ form_row(form.end, {type: 'datetime-local'}) }}
+			{{ form_rest(form) }}
+			<button class="btn btn-primary mt-3" type="submit">Ajouter l'event</button>
+			{{ form_end(form) }}
+		</div>
+	</div>
+
+{% endblock %}

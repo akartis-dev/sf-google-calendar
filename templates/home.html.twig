@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+	<h2>Se connecter à google</h2>
+	{{ form_start(form) }}
+	{{ form_rest(form) }}
+	<button class="btn btn-primary" type="submit">Autoriser la connexion</button>
+	{{ form_end(form) }}
+{% endblock %}
+
+
